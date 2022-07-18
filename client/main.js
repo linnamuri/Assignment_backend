@@ -59,7 +59,7 @@ optionType.addEventListener("change", function() {
 
 function createItemCard(item,type) {
     const itemCard = document.createElement('div')
-    itemCard.innerHTML = `<br/><input type="text" class="title" id=${type}_${item.id} value="${item.title}" disabled></input>
+    itemCard.innerHTML = `<br/><input type="text" size="100" class="title" id=${type}_${item.id} value="${item.title}" disabled></input>
     &nbsp;&nbsp;&nbsp;<button id=edit_${type}_${item.id} onClick="unlockInput('${type}_${item.id}')">Edit</button>
     &nbsp;&nbsp;&nbsp;<button id=delete_${type}_${item.id} onClick="deleteItem('${type}','${item.id}')">Delete</button>
     &nbsp;&nbsp;&nbsp;<button id=submit_${type}_${item.id} style="display:none" onClick="editItem('${type}','${item.id}')">Submit</button>
