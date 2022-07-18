@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get Fortune</button>
+    <br/><br/>
+
+
+    <select name="optionType" id="optionType">
+      <option value="none" selected disabled hidden>Select an Option</option>
+
+      <optgroup label="Inspire">
+        <option value="listInspire">List All Inspiring Items</option>
+        <option value="createInspire">Create Inspiring Item</option>
+      </optgroup>
+      <optgroup label="Help">
+        <option value="listHelp">List All Helpful Items</option>
+        <option value="createHelp">Create Helpful Item</option>
+      </optgroup>
+      <optgroup label="Enquire">
+        <option value="listEncourage">List All Encouraging Items</option>
+        <option value="createEncourage">Create Encouraging Item</option>
+      </optgroup>
+    </select>
+
+    <section id="listContainer"></section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
